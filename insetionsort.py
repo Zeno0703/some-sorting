@@ -1,17 +1,27 @@
 def insertion_sort(array):
-    pass
+    N = len(array)
+    for i in range(N):
+        j = i
+        while j > 0 and less(array[j], array[j-1]):
+            exch(array, j, j-1)
+            j -= 1
+    return array
 
 
 def less(i, j):
-    pass
+    return i < j
 
 
 def exch(array, i, j):
-    pass
+    temp = array[i]
+    array[i] = array[j]
+    array[j] = temp
 
 
 def main():
-    pass
+    array = [3, 8, 1, 9, 6, 4, 5, 2, 7]
+    sortedArray = insertion_sort(array)
+    print(sortedArray)
 
 
 main()
