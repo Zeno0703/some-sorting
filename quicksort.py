@@ -9,12 +9,17 @@ def quicksort(array):
     right_array = []
 
     for i in array:
-        if i > pivot:
-            right_array.append(i)
-        else:
-            left_array.append(i)
+        place_in_array(left_array, right_array, i, pivot)
 
     return quicksort(left_array) + [pivot] + quicksort(right_array)
+
+
+def place_in_array(smaller, greater, item, pivot):
+    if item > pivot:
+        greater.append(item)
+    else:
+        smaller.append(item)
+
 
 def main():
     array = [3, 9, 6, 1, 2, 5, 4, 8]
