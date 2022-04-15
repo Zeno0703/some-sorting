@@ -1,22 +1,20 @@
 def quicksort(array):
     N = len(array)
-    pivot_idx = N // 2
-    pivot = array[pivot_idx]
-    for i in range(N):
-        if array[i] >= pivot:
-            j = N - 1
-            while array[j] > pivot:
-                j -= 1
-            swap(array, i, j)
-        if i == N // 2:
-            break
-    return quicksort(array[:N//2]) + pivot + quicksort(array[N//2 + 1:])
+    if N <= 1:
+        return array
+    else:
+        pivot = array.pop()
 
+    left_array = []
+    right_array = []
 
-def swap(array, i, j):
-    temp = array[i]
-    array[i] = array[j]
-    array[j] = temp
+    for i in array:
+        if i > pivot:
+            right_array.append(i)
+        else:
+            left_array.append(i)
+
+    return quicksort(left_array) + [pivot] + quicksort(right_array)
 
 
 def main():
