@@ -16,7 +16,6 @@ def quicksort(array):
 
     return quicksort(left_array) + [pivot] + quicksort(right_array)
 
-
 def main():
     array = [3, 9, 6, 1, 2, 5, 4, 8]
     sortedArray = quicksort(array)
