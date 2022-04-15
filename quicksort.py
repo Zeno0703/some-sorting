@@ -4,7 +4,8 @@ def quicksort(array):
     for i in range(N):
         if array[i] >= pivot:
             j = N
-            while j
+            while j > 0:
+                continue
 
 
 def swap(array, i, j):
