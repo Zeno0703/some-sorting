@@ -1,12 +1,10 @@
 def quicksort(array):
-    N = len(array)
-    if N <= 1:
+    if len(array) <= 1:
         return array
-    else:
-        pivot = array.pop()
 
-    left_array = []
-    right_array = []
+    pivot = array.pop()
+
+    left_array = []; right_array = []
 
     for i in array:
         place_in_array(left_array, right_array, i, pivot)
