@@ -1,6 +1,5 @@
 def insertion_sort(array):
-    N = len(array)
-    for i in range(N):
+    for i in range(len(array)):
         j = i
         while j > 0 and less(array[j], array[j-1]):
             exch(array, j, j-1)
