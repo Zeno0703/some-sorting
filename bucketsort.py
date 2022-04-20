@@ -1,4 +1,4 @@
-from insetionsort import *
+from insertionsort import *
 
 
 def bucketsort(array):
@@ -25,7 +25,7 @@ def appendItemsInBuckets(array, bucketArray):
 
 def sortBuckets(bucketArray):
     for bucket in bucketArray:
-        insertion_sort(bucket)
+        insertionSort(bucket)
 
 
 def restoreSortedItems(array, bucketArray):
