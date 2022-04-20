@@ -1,4 +1,4 @@
-def insertion_sort(array):
+def insertionSort(array):
     for i in range(len(array)):
         j = i
         while j > 0 and less(array[j], array[j-1]):
@@ -19,7 +19,7 @@ def exch(array, i, j):
 
 def main():
     array = [3, 8, 1, 9, 6, 4, 5, 2, 7]
-    sortedArray = insertion_sort(array)
+    sortedArray = insertionSort(array)
     print(sortedArray)
 
 
