@@ -1,11 +1,11 @@
-def selection_sort(array):
+def selectionSort(array):
     for i in range(len(array)):
-        minimum = get_minimum(array, i)
+        minimum = getMinimum(array, i)
         exchange(array, i, minimum)
     return array
 
 
-def get_minimum(array, i):
+def getMinimum(array, i):
     minimum = i
     for j in range(i + 1, len(array)):
         if array[j] < array[minimum]:
@@ -22,8 +22,8 @@ def exchange(array, i, j):
 def main():
 
     array = [6, 3, 9, 2, 1, 5]
-    sorted_array = selection_sort(array)
-    print(sorted_array)
+    sortedArray = selectionSort(array)
+    print(sortedArray)
 
 
 main()
