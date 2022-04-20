@@ -1,7 +1,7 @@
-from insertionsort import *
+from InsertionSort import *
 
 
-def bucketsort(array):
+def bucketSort(array):
 
     bucketArray = createBucketArray(len(array))
     appendItemsInBuckets(array, bucketArray)
@@ -38,7 +38,7 @@ def restoreSortedItems(array, bucketArray):
 
 def main():
     array = [0.28, 0.34, 0.65, 0.12, 0.33, 0.88, 0.56, 0.55, 0.44, 0.78, 0.32, 0.37, 0.78, 0.99, 0.12, 0.93]
-    sortedArray = bucketsort(array)
+    sortedArray = bucketSort(array)
     print(sortedArray)
 
 
