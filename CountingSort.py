@@ -8,9 +8,8 @@ def countingSort(array):
 
 
 def createIndexArray(array):
-    indexRange = max(array) - min(array) + 1
     indexArray = []
-    for i in range(indexRange):
+    for i in range(max(array) - min(array) + 1):
         indexArray.append(0)
 
     initializeIndexArray(array, indexArray)
