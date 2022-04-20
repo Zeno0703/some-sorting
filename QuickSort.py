@@ -15,7 +15,7 @@ def quickSort(array):
 def placeInArray(left, right, item, pivot):
     if item > pivot:
         right.append(item)
-    else
+    else:
         left.append(item)
 
 
@@ -26,4 +26,3 @@ def main():
 
 
 main()
-no
