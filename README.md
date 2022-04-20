@@ -11,4 +11,6 @@ A couple of sorting algorithms, mostly in Python.
 
 ## TO BE DONE:
 - Radix sort (LSD)
-- (Merge sort)
+- Radix sort (MSD) 'rec'
+- Merge sort 'rec'
+- Heap sort
