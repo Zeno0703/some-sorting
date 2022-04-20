@@ -1,6 +1,6 @@
 # Some sorting
 
-A couple of sorting algorithms, mostly in Python.
+A couple of sorting algorithms, mostly in `Python`.
 
 ## Already done:
 - `Selection sort`
