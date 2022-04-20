@@ -7,8 +7,8 @@ A couple of sorting algorithms, mostly in Python.
 - Insertion sort
 - Quicksort
 - Bucket sort
+- Counting sort
 
 ## TO BE DONE:
-- Counting sort
 - Radix sort (LSD)
 - (Merge sort)
